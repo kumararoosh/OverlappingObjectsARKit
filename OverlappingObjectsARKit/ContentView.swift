@@ -64,8 +64,8 @@ struct RealityKitView: UIViewRepresentable {
             let anchor = AnchorEntity()
             view.scene.anchors.append(anchor)
             let box = MeshResource.generateBox(size: 0.5, cornerRadius: 0.05)
-            let redBoxMaterial = SimpleMaterial(color: .red, isMetallic: true)
-            let yellowBoxMaterial = SimpleMaterial(color: .yellow, isMetallic: true)
+            let redBoxMaterial = SimpleMaterial(color: .red, isMetallic: false)
+            let yellowBoxMaterial = SimpleMaterial(color: .yellow, isMetallic: false)
             
             let redBoxEntity = ModelEntity(mesh: box, materials: [redBoxMaterial])
             let yellowBoxEntity = ModelEntity(mesh: box, materials: [yellowBoxMaterial])
@@ -75,6 +75,24 @@ struct RealityKitView: UIViewRepresentable {
             
             anchor.addChild(redBoxEntity)
             anchor.addChild(yellowBoxEntity)
+            
+            let redBoxEntity2 = redBoxEntity.clone(recursive: true)
+            let yellowBoxEntity2 = yellowBoxEntity.clone(recursive: true)
+            
+            redBoxEntity2.setPosition([0.8, -1, -2], relativeTo: nil)
+            yellowBoxEntity2.setPosition([0.8, -0.8, -2], relativeTo: nil)
+            
+            anchor.addChild(redBoxEntity2)
+            anchor.addChild(yellowBoxEntity2)
+            
+            let redBoxEntity3 = redBoxEntity.clone(recursive: true)
+            let yellowBoxEntity3 = yellowBoxEntity.clone(recursive: true)
+            
+            redBoxEntity3.setPosition([-0.7, -1, -2], relativeTo: nil)
+            yellowBoxEntity3.setPosition([-0.7, -1, -2.2], relativeTo: nil)
+            
+            anchor.addChild(redBoxEntity3)
+            anchor.addChild(yellowBoxEntity3)
             
             
         }
@@ -97,9 +115,9 @@ struct RealityKitView: UIViewRepresentable {
             count += 1
             
             // place entities at the same location and observe the difference
-            let boxMaterial = SimpleMaterial(color: color, isMetallic: true)
+            let boxMaterial = SimpleMaterial(color: color, isMetallic: false)
             let diceEntity = ModelEntity(mesh: box, materials: [boxMaterial])
-            diceEntity.setPosition([-0.5, -1, -2 ], relativeTo: nil)
+            diceEntity.setPosition([-1.4, -1, -2 ], relativeTo: nil)
             
             anchor.addChild(diceEntity)
             
