@@ -1,0 +1,590 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DB7078A427B0B32300802E0F /* OverlappingObjectsARKitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7078A327B0B32300802E0F /* OverlappingObjectsARKitApp.swift */; };
+		DB7078A627B0B32300802E0F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7078A527B0B32300802E0F /* ContentView.swift */; };
+		DB7078A827B0B32600802E0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB7078A727B0B32600802E0F /* Assets.xcassets */; };
+		DB7078AB27B0B32600802E0F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB7078AA27B0B32600802E0F /* Preview Assets.xcassets */; };
+		DB7078B527B0B32600802E0F /* OverlappingObjectsARKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7078B427B0B32600802E0F /* OverlappingObjectsARKitTests.swift */; };
+		DB7078BF27B0B32700802E0F /* OverlappingObjectsARKitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7078BE27B0B32700802E0F /* OverlappingObjectsARKitUITests.swift */; };
+		DB7078C127B0B32700802E0F /* OverlappingObjectsARKitUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7078C027B0B32700802E0F /* OverlappingObjectsARKitUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DB7078B127B0B32600802E0F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DB70789827B0B32300802E0F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DB70789F27B0B32300802E0F;
+			remoteInfo = OverlappingObjectsARKit;
+		};
+		DB7078BB27B0B32700802E0F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DB70789827B0B32300802E0F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DB70789F27B0B32300802E0F;
+			remoteInfo = OverlappingObjectsARKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DB7078A027B0B32300802E0F /* OverlappingObjectsARKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OverlappingObjectsARKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB7078A327B0B32300802E0F /* OverlappingObjectsARKitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlappingObjectsARKitApp.swift; sourceTree = "<group>"; };
+		DB7078A527B0B32300802E0F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DB7078A727B0B32600802E0F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DB7078AA27B0B32600802E0F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DB7078B027B0B32600802E0F /* OverlappingObjectsARKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OverlappingObjectsARKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB7078B427B0B32600802E0F /* OverlappingObjectsARKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlappingObjectsARKitTests.swift; sourceTree = "<group>"; };
+		DB7078BA27B0B32700802E0F /* OverlappingObjectsARKitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OverlappingObjectsARKitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB7078BE27B0B32700802E0F /* OverlappingObjectsARKitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlappingObjectsARKitUITests.swift; sourceTree = "<group>"; };
+		DB7078C027B0B32700802E0F /* OverlappingObjectsARKitUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlappingObjectsARKitUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DB70789D27B0B32300802E0F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB7078AD27B0B32600802E0F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB7078B727B0B32700802E0F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DB70789727B0B32300802E0F = {
+			isa = PBXGroup;
+			children = (
+				DB7078A227B0B32300802E0F /* OverlappingObjectsARKit */,
+				DB7078B327B0B32600802E0F /* OverlappingObjectsARKitTests */,
+				DB7078BD27B0B32700802E0F /* OverlappingObjectsARKitUITests */,
+				DB7078A127B0B32300802E0F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DB7078A127B0B32300802E0F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DB7078A027B0B32300802E0F /* OverlappingObjectsARKit.app */,
+				DB7078B027B0B32600802E0F /* OverlappingObjectsARKitTests.xctest */,
+				DB7078BA27B0B32700802E0F /* OverlappingObjectsARKitUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DB7078A227B0B32300802E0F /* OverlappingObjectsARKit */ = {
+			isa = PBXGroup;
+			children = (
+				DB7078A327B0B32300802E0F /* OverlappingObjectsARKitApp.swift */,
+				DB7078A527B0B32300802E0F /* ContentView.swift */,
+				DB7078A727B0B32600802E0F /* Assets.xcassets */,
+				DB7078A927B0B32600802E0F /* Preview Content */,
+			);
+			path = OverlappingObjectsARKit;
+			sourceTree = "<group>";
+		};
+		DB7078A927B0B32600802E0F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				DB7078AA27B0B32600802E0F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DB7078B327B0B32600802E0F /* OverlappingObjectsARKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				DB7078B427B0B32600802E0F /* OverlappingObjectsARKitTests.swift */,
+			);
+			path = OverlappingObjectsARKitTests;
+			sourceTree = "<group>";
+		};
+		DB7078BD27B0B32700802E0F /* OverlappingObjectsARKitUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DB7078BE27B0B32700802E0F /* OverlappingObjectsARKitUITests.swift */,
+				DB7078C027B0B32700802E0F /* OverlappingObjectsARKitUITestsLaunchTests.swift */,
+			);
+			path = OverlappingObjectsARKitUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DB70789F27B0B32300802E0F /* OverlappingObjectsARKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB7078C427B0B32700802E0F /* Build configuration list for PBXNativeTarget "OverlappingObjectsARKit" */;
+			buildPhases = (
+				DB70789C27B0B32300802E0F /* Sources */,
+				DB70789D27B0B32300802E0F /* Frameworks */,
+				DB70789E27B0B32300802E0F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OverlappingObjectsARKit;
+			productName = OverlappingObjectsARKit;
+			productReference = DB7078A027B0B32300802E0F /* OverlappingObjectsARKit.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DB7078AF27B0B32600802E0F /* OverlappingObjectsARKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB7078C727B0B32700802E0F /* Build configuration list for PBXNativeTarget "OverlappingObjectsARKitTests" */;
+			buildPhases = (
+				DB7078AC27B0B32600802E0F /* Sources */,
+				DB7078AD27B0B32600802E0F /* Frameworks */,
+				DB7078AE27B0B32600802E0F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DB7078B227B0B32600802E0F /* PBXTargetDependency */,
+			);
+			name = OverlappingObjectsARKitTests;
+			productName = OverlappingObjectsARKitTests;
+			productReference = DB7078B027B0B32600802E0F /* OverlappingObjectsARKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DB7078B927B0B32700802E0F /* OverlappingObjectsARKitUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB7078CA27B0B32700802E0F /* Build configuration list for PBXNativeTarget "OverlappingObjectsARKitUITests" */;
+			buildPhases = (
+				DB7078B627B0B32700802E0F /* Sources */,
+				DB7078B727B0B32700802E0F /* Frameworks */,
+				DB7078B827B0B32700802E0F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DB7078BC27B0B32700802E0F /* PBXTargetDependency */,
+			);
+			name = OverlappingObjectsARKitUITests;
+			productName = OverlappingObjectsARKitUITests;
+			productReference = DB7078BA27B0B32700802E0F /* OverlappingObjectsARKitUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DB70789827B0B32300802E0F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					DB70789F27B0B32300802E0F = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					DB7078AF27B0B32600802E0F = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = DB70789F27B0B32300802E0F;
+					};
+					DB7078B927B0B32700802E0F = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = DB70789F27B0B32300802E0F;
+					};
+				};
+			};
+			buildConfigurationList = DB70789B27B0B32300802E0F /* Build configuration list for PBXProject "OverlappingObjectsARKit" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DB70789727B0B32300802E0F;
+			productRefGroup = DB7078A127B0B32300802E0F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DB70789F27B0B32300802E0F /* OverlappingObjectsARKit */,
+				DB7078AF27B0B32600802E0F /* OverlappingObjectsARKitTests */,
+				DB7078B927B0B32700802E0F /* OverlappingObjectsARKitUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DB70789E27B0B32300802E0F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB7078AB27B0B32600802E0F /* Preview Assets.xcassets in Resources */,
+				DB7078A827B0B32600802E0F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB7078AE27B0B32600802E0F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB7078B827B0B32700802E0F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DB70789C27B0B32300802E0F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB7078A627B0B32300802E0F /* ContentView.swift in Sources */,
+				DB7078A427B0B32300802E0F /* OverlappingObjectsARKitApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB7078AC27B0B32600802E0F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB7078B527B0B32600802E0F /* OverlappingObjectsARKitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB7078B627B0B32700802E0F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB7078BF27B0B32700802E0F /* OverlappingObjectsARKitUITests.swift in Sources */,
+				DB7078C127B0B32700802E0F /* OverlappingObjectsARKitUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DB7078B227B0B32600802E0F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DB70789F27B0B32300802E0F /* OverlappingObjectsARKit */;
+			targetProxy = DB7078B127B0B32600802E0F /* PBXContainerItemProxy */;
+		};
+		DB7078BC27B0B32700802E0F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DB70789F27B0B32300802E0F /* OverlappingObjectsARKit */;
+			targetProxy = DB7078BB27B0B32700802E0F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		DB7078C227B0B32700802E0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DB7078C327B0B32700802E0F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DB7078C527B0B32700802E0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"OverlappingObjectsARKit/Preview Content\"";
+				DEVELOPMENT_TEAM = G4W68G8GFR;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.OverlappingObjectsARKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DB7078C627B0B32700802E0F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"OverlappingObjectsARKit/Preview Content\"";
+				DEVELOPMENT_TEAM = G4W68G8GFR;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.OverlappingObjectsARKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DB7078C827B0B32700802E0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G4W68G8GFR;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.OverlappingObjectsARKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OverlappingObjectsARKit.app/OverlappingObjectsARKit";
+			};
+			name = Debug;
+		};
+		DB7078C927B0B32700802E0F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G4W68G8GFR;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.OverlappingObjectsARKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OverlappingObjectsARKit.app/OverlappingObjectsARKit";
+			};
+			name = Release;
+		};
+		DB7078CB27B0B32700802E0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G4W68G8GFR;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.OverlappingObjectsARKitUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OverlappingObjectsARKit;
+			};
+			name = Debug;
+		};
+		DB7078CC27B0B32700802E0F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G4W68G8GFR;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.OverlappingObjectsARKitUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OverlappingObjectsARKit;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DB70789B27B0B32300802E0F /* Build configuration list for PBXProject "OverlappingObjectsARKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB7078C227B0B32700802E0F /* Debug */,
+				DB7078C327B0B32700802E0F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB7078C427B0B32700802E0F /* Build configuration list for PBXNativeTarget "OverlappingObjectsARKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB7078C527B0B32700802E0F /* Debug */,
+				DB7078C627B0B32700802E0F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB7078C727B0B32700802E0F /* Build configuration list for PBXNativeTarget "OverlappingObjectsARKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB7078C827B0B32700802E0F /* Debug */,
+				DB7078C927B0B32700802E0F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB7078CA27B0B32700802E0F /* Build configuration list for PBXNativeTarget "OverlappingObjectsARKitUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB7078CB27B0B32700802E0F /* Debug */,
+				DB7078CC27B0B32700802E0F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DB70789827B0B32300802E0F /* Project object */;
+}
