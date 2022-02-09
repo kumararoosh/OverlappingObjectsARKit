@@ -61,38 +61,38 @@ struct RealityKitView: UIViewRepresentable {
             self.focusEntity = FocusEntity(on: view, style: .classic(color: .yellow))
             
             // places two entities (cubes) in the same location but slightly offset on the x-axis
-            let anchor = AnchorEntity()
-            view.scene.anchors.append(anchor)
-            let box = MeshResource.generateBox(size: 0.5, cornerRadius: 0.05)
-            let redBoxMaterial = SimpleMaterial(color: .red, isMetallic: false)
-            let yellowBoxMaterial = SimpleMaterial(color: .yellow, isMetallic: false)
+//            let anchor = AnchorEntity()
+//            view.scene.anchors.append(anchor)
+//            let box = MeshResource.generateBox(size: 0.5, cornerRadius: 0.05)
+//            let redBoxMaterial = SimpleMaterial(color: .red, isMetallic: false)
+//            let yellowBoxMaterial = SimpleMaterial(color: .yellow, isMetallic: false)
+//
+//            let redBoxEntity = ModelEntity(mesh: box, materials: [redBoxMaterial])
+//            let yellowBoxEntity = ModelEntity(mesh: box, materials: [yellowBoxMaterial])
+//
+//            redBoxEntity.setPosition([0, -1, -2], relativeTo: nil)
+//            yellowBoxEntity.setPosition([0, -1, -2], relativeTo: nil)
+//
+//            anchor.addChild(redBoxEntity)
+//            anchor.addChild(yellowBoxEntity)
             
-            let redBoxEntity = ModelEntity(mesh: box, materials: [redBoxMaterial])
-            let yellowBoxEntity = ModelEntity(mesh: box, materials: [yellowBoxMaterial])
-            
-            redBoxEntity.setPosition([0.2, -1, -2], relativeTo: nil)
-            yellowBoxEntity.setPosition([0, -1, -2], relativeTo: nil)
-            
-            anchor.addChild(redBoxEntity)
-            anchor.addChild(yellowBoxEntity)
-            
-            let redBoxEntity2 = redBoxEntity.clone(recursive: true)
-            let yellowBoxEntity2 = yellowBoxEntity.clone(recursive: true)
-            
-            redBoxEntity2.setPosition([0.8, -1, -2], relativeTo: nil)
-            yellowBoxEntity2.setPosition([0.8, -0.8, -2], relativeTo: nil)
-            
-            anchor.addChild(redBoxEntity2)
-            anchor.addChild(yellowBoxEntity2)
-            
-            let redBoxEntity3 = redBoxEntity.clone(recursive: true)
-            let yellowBoxEntity3 = yellowBoxEntity.clone(recursive: true)
-            
-            redBoxEntity3.setPosition([-0.7, -1, -2], relativeTo: nil)
-            yellowBoxEntity3.setPosition([-0.7, -1, -2.2], relativeTo: nil)
-            
-            anchor.addChild(redBoxEntity3)
-            anchor.addChild(yellowBoxEntity3)
+//            let redBoxEntity2 = redBoxEntity.clone(recursive: true)
+//            let yellowBoxEntity2 = yellowBoxEntity.clone(recursive: true)
+//
+//            redBoxEntity2.setPosition([0.8, -1, -2], relativeTo: nil)
+//            yellowBoxEntity2.setPosition([0.8, -0.8, -2], relativeTo: nil)
+//
+//            anchor.addChild(redBoxEntity2)
+//            anchor.addChild(yellowBoxEntity2)
+//
+//            let redBoxEntity3 = redBoxEntity.clone(recursive: true)
+//            let yellowBoxEntity3 = yellowBoxEntity.clone(recursive: true)
+//
+//            redBoxEntity3.setPosition([-0.7, -1, -2], relativeTo: nil)
+//            yellowBoxEntity3.setPosition([-0.7, -1, -2.2], relativeTo: nil)
+//
+//            anchor.addChild(redBoxEntity3)
+//            anchor.addChild(yellowBoxEntity3)
             
             
         }
@@ -106,20 +106,18 @@ struct RealityKitView: UIViewRepresentable {
             
             // Add a Box entity with alternating blue and green material
             let box = MeshResource.generateBox(size: 0.5, cornerRadius: 0.05)
-            var color: UIColor = .blue
-            if (count % 2 == 0) {
-                color = .blue
-            } else {
-                color = .green
-            }
-            count += 1
+            let redBoxMaterial = SimpleMaterial(color: .red, isMetallic: false)
+            let yellowBoxMaterial = SimpleMaterial(color: .yellow, isMetallic: false)
+            let yellowBoxEntity = ModelEntity(mesh: box, materials: [yellowBoxMaterial])
+
+            let redBoxEntity = ModelEntity(mesh: box, materials: [redBoxMaterial])
             
-            // place entities at the same location and observe the difference
-            let boxMaterial = SimpleMaterial(color: color, isMetallic: false)
-            let diceEntity = ModelEntity(mesh: box, materials: [boxMaterial])
-            diceEntity.setPosition([-1.4, -1, -2 ], relativeTo: nil)
+            redBoxEntity.setPosition([0, -1, -2], relativeTo: nil)
+            yellowBoxEntity.setPosition([0, -1, -2], relativeTo: nil)
             
-            anchor.addChild(diceEntity)
+            anchor.addChild(yellowBoxEntity)
+            anchor.addChild(redBoxEntity)
+
             
         }
     }
