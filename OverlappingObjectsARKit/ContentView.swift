@@ -64,7 +64,7 @@ struct RealityKitView: UIViewRepresentable {
         }
         
         @objc func handleTap() {
-            guard let view = self.view else {return}
+            guard let view = self.view, let focusEntity = self.focusEntity else {return}
             
             // Create a new anchor to add content on
             let anchor = AnchorEntity()
@@ -74,13 +74,15 @@ struct RealityKitView: UIViewRepresentable {
             let box = MeshResource.generateBox(size: 0.5, cornerRadius: 0.05)
             let redBoxMaterial = SimpleMaterial(color: .red, isMetallic: false)
             let yellowBoxMaterial = SimpleMaterial(color: .yellow, isMetallic: false)
-            let yellowBoxEntity = ModelEntity(mesh: box, materials: [yellowBoxMaterial])
 
             let redBoxEntity = ModelEntity(mesh: box, materials: [redBoxMaterial])
+            let yellowBoxEntity = ModelEntity(mesh: box, materials: [yellowBoxMaterial])
+
             
-            redBoxEntity.setPosition([0, -1, -2], relativeTo: nil)
-            yellowBoxEntity.setPosition([0, -1, -2], relativeTo: nil)
-            
+            redBoxEntity.position = focusEntity.position
+            yellowBoxEntity.position = focusEntity.position
+            count += 1
+            debugPrint("number of boxes added", count * 2)
             anchor.addChild(yellowBoxEntity)
             anchor.addChild(redBoxEntity)
 
