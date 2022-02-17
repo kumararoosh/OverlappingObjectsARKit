@@ -15,6 +15,7 @@
 		DB7078BF27B0B32700802E0F /* OverlappingObjectsARKitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7078BE27B0B32700802E0F /* OverlappingObjectsARKitUITests.swift */; };
 		DB7078C127B0B32700802E0F /* OverlappingObjectsARKitUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7078C027B0B32700802E0F /* OverlappingObjectsARKitUITestsLaunchTests.swift */; };
 		DB7078CF27B0B37800802E0F /* FocusEntity in Frameworks */ = {isa = PBXBuildFile; productRef = DB7078CE27B0B37800802E0F /* FocusEntity */; };
+		DBD1704327BDC99F002121A2 /* Promises in Frameworks */ = {isa = PBXBuildFile; productRef = DBD1704227BDC99F002121A2 /* Promises */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBD1704327BDC99F002121A2 /* Promises in Frameworks */,
 				DB7078CF27B0B37800802E0F /* FocusEntity in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,6 +149,7 @@
 			name = OverlappingObjectsARKit;
 			packageProductDependencies = (
 				DB7078CE27B0B37800802E0F /* FocusEntity */,
+				DBD1704227BDC99F002121A2 /* Promises */,
 			);
 			productName = OverlappingObjectsARKit;
 			productReference = DB7078A027B0B32300802E0F /* OverlappingObjectsARKit.app */;
@@ -222,6 +225,7 @@
 			mainGroup = DB70789727B0B32300802E0F;
 			packageReferences = (
 				DB7078CD27B0B37800802E0F /* XCRemoteSwiftPackageReference "FocusEntity" */,
+				DBD1704127BDC99F002121A2 /* XCRemoteSwiftPackageReference "promises" */,
 			);
 			productRefGroup = DB7078A127B0B32300802E0F /* Products */;
 			projectDirPath = "";
@@ -605,6 +609,14 @@
 				kind = branch;
 			};
 		};
+		DBD1704127BDC99F002121A2 /* XCRemoteSwiftPackageReference "promises" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/promises";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -612,6 +624,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = DB7078CD27B0B37800802E0F /* XCRemoteSwiftPackageReference "FocusEntity" */;
 			productName = FocusEntity;
+		};
+		DBD1704227BDC99F002121A2 /* Promises */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DBD1704127BDC99F002121A2 /* XCRemoteSwiftPackageReference "promises" */;
+			productName = Promises;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

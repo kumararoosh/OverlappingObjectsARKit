@@ -9,6 +9,7 @@ import SwiftUI
 import ARKit
 import RealityKit
 import FocusEntity
+import Promises
 
 struct RealityKitView: UIViewRepresentable {
     func makeUIView(context: Context) -> ARView {
@@ -75,16 +76,26 @@ struct RealityKitView: UIViewRepresentable {
             let redBoxMaterial = SimpleMaterial(color: .red, isMetallic: false)
             let yellowBoxMaterial = SimpleMaterial(color: .yellow, isMetallic: false)
 
-            let redBoxEntity = ModelEntity(mesh: box, materials: [redBoxMaterial])
-            let yellowBoxEntity = ModelEntity(mesh: box, materials: [yellowBoxMaterial])
-
+//            let redBoxEntity = ModelEntity(mesh: box, materials: [redBoxMaterial])
+//            let yellowBoxEntity = ModelEntity(mesh: box, materials: [yellowBoxMaterial])
+            all([Promise(ModelEntity(mesh: box, materials: [yellowBoxMaterial])),
+                 Promise(ModelEntity(mesh: box, materials: [redBoxMaterial]))])
+                .then { boxes in
+                    debugPrint("promise fired")
+                    boxes[0].position = focusEntity.position
+                    boxes[1].position = focusEntity.position
+                    anchor.addChild(boxes[0])
+                    anchor.addChild(boxes[1])
+                }
             
-            redBoxEntity.position = focusEntity.position
-            yellowBoxEntity.position = focusEntity.position
+            
+            
+//            redBoxEntity.position = focusEntity.position
+//            yellowBoxEntity.position = focusEntity.position
             count += 1
             debugPrint("number of boxes added", count * 2)
-            anchor.addChild(yellowBoxEntity)
-            anchor.addChild(redBoxEntity)
+//            anchor.addChild(yellowBoxEntity)
+//            anchor.addChild(redBoxEntity)
 
             
         }
